@@ -29,17 +29,14 @@ void setup(){//描画ウィンドウの設定、色などの設定
   vY = new float[arraySize];
   hue = new float[arraySize];
   for(int i = 0; i < arraySize; i++){
-     //posX[i] = width/2.0;
      posX[i] = 0;
      posY[i] = height/2.0;
      vX[i] = random(-1,1); //x方向移動変化量
      vY[i] = random(-1,1);//y方向
      //hue[i] = random(0, 360);//色相
   }
-  //frameRate(100);
 }
 
-//時間あったらやりたいこと：火花の本数増やす
 void draw(){
   background(0);
  
@@ -59,7 +56,7 @@ void draw(){
               y0 =  y * 2 + height/2 - 100;
                
                fill(color(firecolor, 100, 100, 100 - count2));
-               //y = y0 + g * t * t / 2 + v0 * t * sin(radians(i*kakudo));
+               
                if(i >= 3 && i <= 5){
                  x = x0 - count;
                }else if(i == 2 || i == 6){
@@ -85,7 +82,7 @@ void draw(){
            ellipse(x, y , rad , rad );
           }//iのfor文
         }//jのfor文
-        //kakudo += 15;
+        
          for( int i=0;i<arraySize;i++ ){
             if((posX[i]  >=  - 150)&& (posX[i]  < 150)&&  posY[i]   >=  130 && posY[i]  <=  400){
               if( i % 2 == 0){
@@ -108,8 +105,8 @@ void draw(){
     }//y2 < 200のif文
   }//mouseのif文
   count2 += 0.5; //透明度を上げる
-  count += 0.5; //0.5
-  t += 0.03; //0.03
+  count += 0.5;
+  t += 0.03;
   ycount += 4;
 }
 
