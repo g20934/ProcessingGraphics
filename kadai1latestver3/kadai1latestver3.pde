@@ -83,25 +83,24 @@ void draw(){
           }//iのfor文
         }//jのfor文
         
-         for( int i=0;i<arraySize;i++ ){
-            if((posX[i]  >=  - 150)&& (posX[i]  < 150)&&  posY[i]   >=  130 && posY[i]  <=  400){
-              if( i % 2 == 0){
-               hue[i] = random(40 , 80);
-               fill( color( hue[i], 100,100, 50));   
-               ellipse(x2 + posX[i] , posY[i] - 100, 3, 3 );        
+       for( int i=0;i<arraySize;i++ ){
+          if((posX[i]  >=  - 150)&& (posX[i]  < 150)&&  posY[i]   >=  130 && posY[i]  <=  400){
+            if( i % 2 == 0){
+             hue[i] = random(40 , 80);
+             fill( color( hue[i], 100,100, 50));   
+             ellipse(x2 + posX[i] , posY[i] - 100, 3, 3 );        
              }else{
-               fill( color( 0, 0,100, 50));
-               ellipse(x2 + posX[i] , posY[i] - 100, 3, 3 );           
+             fill( color( 0, 0,100, 50));
+             ellipse(x2 + posX[i] , posY[i] - 100, 3, 3 );           
              }
-           } 
-         } 
-          
-          for( int i=0;i<arraySize;i++ ){
-            posX[i] = posX[i] +3*vX[i];
-            posY[i] = posY[i] + 3*vY[i];
-            hue[i] = (hue[i] +2.0) % 360;
-          }
-  
+          } 
+       } 
+
+      for( int i=0;i<arraySize;i++ ){
+        posX[i] = posX[i] +3*vX[i];
+        posY[i] = posY[i] + 3*vY[i];
+        hue[i] = (hue[i] +2.0) % 360;
+      }  
     }//y2 < 200のif文
   }//mouseのif文
   count2 += 0.5; //透明度を上げる
