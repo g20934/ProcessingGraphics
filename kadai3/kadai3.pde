@@ -21,7 +21,7 @@ void setup(){
   size(1028, 550, P3D);
   frameRate(120);//１秒あたり120回draw()を呼び出す 金平糖の精の踊りをテンポ60としたため、フレームレートは計算しやすい値である120にした。
   colorMode(HSB, 360, 100, 100, 100);
-  piano = new SoundFile(this, "konpeitoVer2.mp3");//チャイコフスキー作曲の『バレエ組曲「くるみ割り人形」より「金平糖の精の踊り」』です。JASRACで著作権が切れていることを確認しました。GarageBandに打ち込んだものを使用しています。テンポを60にしました。
+  piano = new SoundFile(this, "konpeitoVer2.mp3");//チャイコフスキー作曲の『バレエ組曲「くるみ割り人形」より「金平糖の精の踊り」』です。JASRACで著作権が切れていることを確認しました。GarageBandに打ち込んだものを使用しています。
   sound1 =  new SoundFile(this, "tambVer3.mp3");
   sound2 =  new SoundFile(this, "cowBell3.mp3");
   sound3 =  new SoundFile(this, "strangeSound.mp3");
