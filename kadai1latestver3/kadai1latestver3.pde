@@ -20,7 +20,7 @@ float count3 = 0;
 float posX[], posY[], vX[], vY[], hue[];
 
 void setup(){//描画ウィンドウの設定、色などの設定
-  size(512, 512);//描画ウィンドウの設定（変数は使えないので、数字で書く！ size(x, y)
+  size(512, 512);//描画ウィンドウの設定（変数は使えないので、数字で書く！)
   colorMode(HSB, 360, 100, 100, 100);
   noStroke();
   posX = new float[arraySize];
