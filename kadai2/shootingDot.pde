@@ -29,7 +29,6 @@ class shootingDot{
     //コピーされた座標系で色々動かす
     fill(color(hue, 100, bright, 100));
     translate(pos.x, pos.y - 80, mdZ);
-    //println(mdZ);
     sphere(size);//sphere(半径）;
     popMatrix();//コピーしたものを破棄して、保存していた座標系に戻す
   }
